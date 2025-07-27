@@ -7,22 +7,21 @@
 </head>
 <body>
   <header>
-    <h1>ברוכים הבאים לאתר של הרב לוי</h1>
+    <h1>ברוכים הבאים לאתר של הרב ליאור לוי</h1>
     <nav>
       <a href="index.html">בית</a>
       <a href="about.html">אודות</a>
-      <a href="shiurim.html">שיעורים</a>
-      <a href="contact.html">צור קשר</a>
+      <a href="shiurim.html">שיעורים</a> 0503814749     <a href="contact.html">צור קשר</a>
     </nav>
   </header>
 
   <main>
     <h2>שיעור השבוע</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XXXX" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" https://www.youtube.com/live/BNKfXEPYQmc?si=0cRDvjVn6lvgueMa" frameborder="0" allowfullscreen></iframe>
   </main>
 
   <footer>
-    <p>© כל הזכויות שמורות לרב לוי</p>
+    <p>© כל הזכויות שמורות לרב ליאור לוי</p>
   </footer>
 </body>
 </html>

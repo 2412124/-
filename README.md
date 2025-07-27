@@ -2,14 +2,14 @@
 <html lang="he">
 <head>
   <meta charset="UTF-8">
-  <title>הרב לוי - שיעורי תורה</title>
+  <title>הרב ליאור לוי - שיעורי תורה</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>ברוכים הבאים לאתר של הרב ליאור לוי</h1>
     <nav>
-      <a href="index.html">בית</a>
+     https://youtube.com/@rabbi_lior_levi_official?si=WVAgylVxR_IeP47n>בית</a>
       <a href="about.html">אודות</a>
       <a href="shiurim.html">שיעורים</a> 0503814749     <a href="contact.html">צור קשר</a>
     </nav>

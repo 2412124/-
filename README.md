@@ -72,12 +72,12 @@
     font-size: 18px;
     line-height: 1.6;
   }
-  /* חלק שיעורים - נניח טקסט */
+  [/* חלק שיעורים - נניח טקסט */](https://youtube.com/shorts/TnZJujLwQ9E) סרטון מחזק!!!https://youtube.com/shorts/tGLXBWt94bw 
   #lessons p {
     font-size: 18px;
     line-height: 1.6;
   }
-  /* טופס יצירת קשר */
+ ליצירת קשר על ספר הרב או פרטים אחרים:0535353745
   form {
     max-width: 500px;
     margin: 0 auto;
@@ -110,8 +110,7 @@
     margin-top: 15px;
     font-size: 18px;
     color: #333;
-  }
-  /* רשתות חברתיות */
+  הרשמו לערוץ הרב ברשתות החברתיות, תודה!
   .social {
     text-align: center;
     margin-top: 40px;
@@ -168,14 +167,14 @@
 <section id="about">
   <h2>אודות</h2>
   <p>
-    כאן תוכלו לכתוב קצת על הרב ליאור לוי, על פעילותו, תורתו, ועל כל דבר שתרצו להציג לעין המבקרים.
+    הרב ליאור לוי רב ומעביר שיעורים בעיר קריית עקרון, מחבר ספרי חוזר לאור, ויש לרב שיעורי תורה ביוטיוב פייסבוק וכו' הרב מרצה למגזר הדתי, חרדי, חילוני, מתחזק, בקיצור לכולם!
   </p>
 </section>
 
 <section id="lessons">
   <h2>שיעורים</h2>
   <p>
-    כאן יוצגו השיעורים השונים – אפשר להוסיף קישורים, טקסט, סרטונים או כל דבר שתרצה.
+    [/* חלק שיעורים - נניח טקסט */](https://youtube.com/shorts/TnZJujLwQ9E) סרטון מחזק!!!https://youtube.com/shorts/tGLXBWt94bw 
   </p>
 </section>
 

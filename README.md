@@ -1,71 +1,204 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>הרב ליאור לוי דף הבית</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #f0f4f8, #dbeafe);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
-        h1 {
-            margin-top: 30px;
-            font-size: 2.2rem;
-            color: #1e3a8a;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-        }
-        .video-container {
-            margin-top: 20px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            max-width: 900px;
-            width: 90%;
-        }
-        iframe {
-            width: 100%;
-            height: 250px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-        .contact, .donate {
-            margin-top: 30px;
-            padding: 15px;
-            background-color: #1e3a8a;
-            color: white;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-        }
-        footer {
-            margin-top: auto;
-            padding: 15px;
-            font-size: 0.9rem;
-            color: #555;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>הרב ליאור לוי</title>
+<style>
+  body {
+    margin: 0; font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+  }
+  header {
+    background: #f5f5f5;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+  }
+  nav {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 12px 0;
+    position: fixed;
+    top: 68px; /* מתחת לכותרת */
+    width: 100%;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 0.05);
+    z-index: 999;
+  }
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #0066cc;
+  }
+  .banner {
+    margin-top: 120px; /* מקום לכותרת ותפריט */
+    width: 100%;
+    height: 300px;
+    background: url('https://via.placeholder.com/1200x300?text=תמונת+באנר+זמנית') center/cover no-repeat;
+  }
+  .intro-text {
+    text-align: center;
+    font-size: 24px;
+    padding: 30px 15px;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+  }
+  section {
+    max-width: 900px;
+    margin: 0 auto 80px auto;
+    padding: 0 15px;
+  }
+  section h2 {
+    font-size: 28px;
+    border-bottom: 3px solid #0066cc;
+    padding-bottom: 6px;
+    margin-bottom: 25px;
+  }
+  /* טקסט פשוט לאודות */
+  #about p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  /* חלק שיעורים - נניח טקסט */
+  #lessons p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  /* טופס יצירת קשר */
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  button {
+    background-color: #0066cc;
+    border: none;
+    color: white;
+    padding: 14px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #004999;
+  }
+  .contact-info {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+  }
+  /* רשתות חברתיות */
+  .social {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .social a {
+    margin: 0 12px;
+    display: inline-block;
+  }
+  .social img {
+    width: 36px;
+    height: 36px;
+    filter: grayscale(0);
+    transition: filter 0.3s;
+  }
+  .social a:hover img {
+    filter: brightness(0.7);
+  }
+  /* גלילה חלקה */
+  html {
+    scroll-behavior: smooth;
+  }
+  /* רספונסיבי */
+  @media (max-width: 600px) {
+    nav {
+      gap: 15px;
+      font-size: 16px;
+    }
+    header {
+      font-size: 22px;
+    }
+    .banner {
+      height: 180px;
+    }
+    .intro-text {
+      font-size: 20px;
+    }
+  }
+</style>
 </head>
 <body>
-    <h1>הרב ליאור לוי דף הבית</h1>
 
-    <!-- סרטונים מיוטיוב -->
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/סרטון1" frameborder="0" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/סרטון2" frameborder="0" allowfullscreen></iframe>
-    </div>
+<header>הרב ליאור לוי</header>
 
-    <!-- כפתורי קשר ותרומה -->
-    <a href="tel:0535353745" class="contact">📞 צור קשר: 053-5353745</a>
-    <a href="tel:0546692050" class="donate">💖 לתרומות על ספר הרב: 054-6692050</a>
+<nav>
+  <a href="#about">אודות</a>
+  <a href="#lessons">שיעורים</a>
+  <a href="#contact">יצירת קשר</a>
+</nav>
 
-    <footer>© כל הזכויות שמורות - הרב ליאור לוי</footer>
+<div class="banner"></div>
+
+<div class="intro-text">ברוכים הבאים לאתר הרב ליאור לוי</div>
+
+<section id="about">
+  <h2>אודות</h2>
+  <p>
+    כאן תוכלו לכתוב קצת על הרב ליאור לוי, על פעילותו, תורתו, ועל כל דבר שתרצו להציג לעין המבקרים.
+  </p>
+</section>
+
+<section id="lessons">
+  <h2>שיעורים</h2>
+  <p>
+    כאן יוצגו השיעורים השונים – אפשר להוסיף קישורים, טקסט, סרטונים או כל דבר שתרצה.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>יצירת קשר</h2>
+  <form onsubmit="alert('תודה! ההודעה נשלחה.'); return false;">
+    <input type="text" name="name" placeholder="שם מלא" required />
+    <input type="email" name="email" placeholder="אימייל" required />
+    <textarea name="message" rows="5" placeholder="הודעה" required></textarea>
+    <button type="submit">שלח</button>
+  </form>
+  <div class="contact-info">
+    טלפון ליצירת קשר: 053-5353745
+  </div>
+  <div class="social">
+    <a href="https://youtube.com/channel/UCKmVkIJOgpG99tZyYnqOBMA?si=gX9vMjDqkQVwRyQH" target="_blank" rel="noopener noreferrer" title="יוטיוב">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="יוטיוב" />
+    </a>
+    <a href="https://www.facebook.com/groups/4194997850786708/" target="_blank" rel="noopener noreferrer" title="פייסבוק">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png" alt="פייסבוק" />
+    </a>
+  </div>
+</section>
+
 </body>
 </html>
- 
